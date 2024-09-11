@@ -39,3 +39,6 @@
 
 # 总结
 本项目利用pySpark的MLlib库，针对Kaggle上的Home Credit Default Risk数据集，成功构建了一个处理类别不平衡的二元分类模型。通过数据预处理解决了缺失值和目标变量不平衡问题，采用加权策略优化模型关注度。特征工程阶段，利用StringIndexer、OneHotEncoderEstimator和VectorAssembler有效转换并组合特征。模型训练阶段，通过逻辑回归和梯度提升树（GBT）对比，发现GBT表现更佳。进一步通过网格搜索和交叉验证优化GBT模型，最终模型在测试集上的AUC值达到0.7368，展现了良好的分类性能，但仍存在进一步提升的空间。
+
+# 参考
+https://github.com/nxs5899/end-to-end-Machine-Learning-model-with-MLlib-in-pySpark

@@ -26,6 +26,7 @@
 ## 模型训练和超参数调整
 为了进行训练，我们首先将数据集分成训练集和测试集。然后我们开始使用逻辑回归进行训练，因为它在二元分类问题中表现良好。使用 PySpark 机器学习库中的 LogisticRegression 类初始化模型，将模型拟合到训练集上并绘制训练数据的 ROC 曲线，以查看逻辑回归的表现。
 ![ROC](https://github.com/Glocas-Leonardo/Photo/blob/fe7555cacde790b9a016552d3338f3dd050bb484/ROC.png)
+
 之后使用 BinaryClassificationEvaluator 对逻辑回归模型在测试集上的预测结果进行评估，并计算其 ROC 曲线下面积（AUC）：
 >Test_SET Area Under ROC：0.7111434396856681
 

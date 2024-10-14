@@ -8,6 +8,7 @@
 
 目标变量的分布情况
 ![label](https://github.com/Glocas-Leonardo/Photo/blob/a2db8cf63e09e6cdb64437b49b15679a1b9bf86e/lable.png)
+
 目标变量为 0（能够偿还贷款的申请人）或 1（无法偿还贷款的申请人）。可以看到目标标签高度不平衡，分配率接近 0.91 到 0.09，其中 0.91 是能够偿还贷款的申请人的比例，0.09 是无法偿还贷款的申请人的比例。
 
 接下来，我们检查有多少个 Categorical  和 Numerical features, 并构建一个函数来输出有关数据集中缺失值的基本信息。然后我们将用每列的平均值填充 Numerical 缺失值，用每列的众数填充 Categorical 缺失值。
